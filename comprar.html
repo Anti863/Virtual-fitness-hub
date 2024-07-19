@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modos de Pago</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #000000;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        .payment-methods {
+            margin: 20px 0;
+        }
+        .payment-methods h2 {
+            color: #fcfcfc;
+        }
+        .payment-method {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .payment-method:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 20px rgba(0,0,0,0.3);
+        }
+        .payment-method h3 {
+            margin-top: 0;
+        }
+        .accordion {
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: background-color 0.3s ease;
+        }
+        .accordion:hover {
+            background-color: #ccc;
+        }
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            display: none;
+            overflow: hidden;
+        }
+        .programs {
+        text-align: center;
+        padding: 40px 20px;
+         background-color: #1c1c1c;
+         background-image: url(profes/griego.png);
+         background-size: cover;
+         color: #fff;
+
+    
+}
+
+.programs h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.programs p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.program-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.program-card {
+    background-color: #1d1c1c;
+    opacity: 0.8;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 250px;
+    text-align: left;
+    color: #fff;
+}
+
+.program-card img {
+    width: 100%;
+    height: auto;
+}
+
+.program-card h3 {
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #444;
+}
+
+.program-card p {
+    padding: 0 15px 15px;
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #bbb;
+}
+
+.program-card button {
+    display: block;
+    width: calc(100% - 30px);
+    margin: 10px auto 15px;
+    padding: 10px;
+    background-color: #e91e63;
+    color: #fff;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.program-card button:hover {
+    background-color: #d81b60;
+}
+
+.more-programs {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #e91e63;
+    color: #fff;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.more-programs:hover {
+    background-color: #d81b60;
+}
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Virtual Fitnes Hub</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="ayuda.html">Acerca de</a></li>
+                    <li><a href="apps.html">Apps</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="programs">
+        <h2>Decide tu plan y no te olvides de compartirlo con tus amigos </h2>
+        <p>Nosotros nos encargamos de mejorar tu salud y de que te veas como un dios Griego</p>
+        <div class="program-cards">
+            <div class="program-card">
+                <img src="Imagenes/BASE.png" alt="Plan Principiante">
+                <h3>PLAN BASE</h3>
+                <p>0$ Mensuales</p>
+                <p>Descarga en apps comparte y disfruta</p>
+                <p>Contenido Base + Tips Nutricionales</p>
+              
+                <button class="more-programs"> <a href="registro.html">COMPRAR PLAN</a></button>
+        
+            </div>
+            <div class="program-card">
+                <img src="Imagenes/musculos.png" alt="Plan Pérdida Peso">
+                <h3>PLAN PÉRDIDA PESO</h3>
+                <p>15$ Mensuales </p>
+                <p>Contenido Premiun + Plan Nutricional </p>
+                <p>Asesoramiento Profesional + Revision medica </p>
+                <button class="more-programs"> <a href="registro.html">COMPRAR PLAN</a></button>
+            </div>
+            <div class="program-card">
+                <img src="Imagenes/no grasa.png" alt="Plan Ganancia">
+                <h3>PLAN GANANCIA</h3>
+                <p>25$ Mensuales </p>
+                <p>Contenido Premiun + Plan Nutricional </p>
+                <p>Asesoramiento Profesional + Revision medica </p>
+                <button class="more-programs"> <a href="registro.html">COMPRAR PLAN</a></button>
+            </div>
+            <div class="program-card">
+                <img src="Imagenes/mantenimiento.png" alt="Plan Mantenimiento">
+                <h3>PLAN MANTENIMIENTO</h3>
+                <p>10$ Mensuales </p>
+                <p>Contenido Premiun + Plan Nutricional </p>
+                <p>Asesoramiento Profesional + Revision medica </p>
+                <button class="more-programs"> <a href="registro.html">COMPRAR PLAN</a></button>
+            </div>
+        </div>
+    
+    </section>
+
+
+</section>
+    
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
